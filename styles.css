@@ -1,0 +1,60 @@
+
+body {
+    background-color: #cdcdcd;
+}
+
+
+#mainFrame {
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+#controlPanel {
+    vertical-align: middle;
+}
+
+.brickcanvas {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    display: inline-block;
+}
+
+.colorButton {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 3px; 
+    border: 1px solid #e6e6e6;
+    display: inline-block;
+}
+
+.colorButton:hover {
+    border: 1px solid #000; 
+}
+
+.textcontrol {
+    margin: 3px;
+    height: 20px;
+    vertical-align: middle;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; 
+    color: #9a9a9a;
+    display: inline-block;
+}
+
+.currentColor {
+    border-radius: 20%;
+    height: 20px;
+    width: 40px;
+    margin: 5px;
+    display: inline-block;
+}
