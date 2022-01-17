@@ -14,9 +14,9 @@ function selectColor( event ){
     block.style["backgroundColor"] = event.target.style["backgroundColor"] 
 }
 
-function showMenu( element ) {
-    element.innerHTML = "";
-    const palette = document.createElement("div")
+function showMenu(   ) { 
+    // Вставляем в палетто заданные цвета из массива
+    const palette = document.querySelector("#palette")
     colorArray.forEach( (color) => { 
         const blockPalette = document.createElement("div")
         blockPalette.className = "colorButton"
@@ -25,23 +25,20 @@ function showMenu( element ) {
         palette.appendChild(blockPalette)
  
     })
-    element.appendChild(palette)
-
-    const control = document.createElement("div")
-    const textCurrent = document.createElement("div")
-    textCurrent.appendChild( document.createTextNode("CURRENT COLOR >") )
-    textCurrent.className = "textcontrol"
-    control.appendChild(textCurrent)
-    const currentBlock = document.createElement("div")
-    currentBlock.className = "currentColor"
+    // Настраеваем меню для выбора цвета
+    const currentBlock = document.querySelector(".currentColor")
     currentBlock.style["backgroundColor"] = colorArray[0]
-    control.appendChild(currentBlock)
-    element.appendChild(control)
+    // Добавляем меню для ластика
+
 }
 
 function paintBlock (event) {
     const block = document.querySelector(".currentColor")
     event.target.style["backgroundColor"] = block.style["backgroundColor"]
+}
+
+function clearBlock ( event ){
+
 }
 
 function printCanvas(element, height, width) {
@@ -58,7 +55,5 @@ function printCanvas(element, height, width) {
     }
 }
 
-const canvas = document.getElementById("canvas")
-const controlPanel = document.getElementById("controlPanel")
-showMenu(controlPanel)
-printCanvas(canvas,20,40)
+showMenu()
+printCanvas(document.getElementById("canvas"),20,40)

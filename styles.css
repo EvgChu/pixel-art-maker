@@ -1,4 +1,23 @@
 
+.header {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.imgEraser{
+    width: 100%;
+    
+}
+
+#eraser {
+    width: 40px;
+    height: 40px;
+}
+
 body {
     background-color: #cdcdcd;
 }
@@ -9,7 +28,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     width: 80%;
-    margin-top: 2em;
+    min-width: 700px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -42,9 +61,8 @@ body {
 }
 
 .textcontrol {
-    margin: 3px;
-    height: 20px;
-    vertical-align: middle;
+
+  
     font-family: 'Poppins', sans-serif;
     font-weight: bold; 
     color: #9a9a9a;
